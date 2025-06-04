@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shobitha Pentakota | Portfolio & Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Smooth scrolling */
+    html { scroll-behavior: smooth; }
+    
+    /* Reset and basic styles */
+    * { box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f8f9fa; color: #222; }
+    header { background: #2e3b4e; color: #fff; padding: 1.5rem 0; text-align: center; }
+    nav { margin: 1rem 0; }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #007bff; }
+    main { max-width: 1100px; margin: 2rem auto; padding: 1rem; background: #fff; border-radius: 10px; box-shadow: 0 2px 10px #0001; }
+    h2 { color: #2e3b4e; margin-top: 2rem; }
+    .section { margin-bottom: 2.5rem; }
+    .flex { display: flex; gap: 2rem; flex-wrap: wrap; }
+    
+    /* Skills */
+    .skills-list { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .skill { background: #e3eafc; color: #2e3b4e; padding: 0.5rem 1rem; border-radius: 20px; font-size: 1rem; }
+    
+    /* Projects */
+    .project-card {
+      background: #f1f5fb;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 4px #0001;
+      width: 300px;
+      flex: 1 1 300px;
+    }
+    .project-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+      background: #ddd;
+    }
+    
+    /* Product Listing */
+    .product-controls { margin-bottom: 1rem; }
+    .product-list { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+    .product-card {
+      background: #f5f5f5;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px #0001;
+      padding: 1rem;
+      width: 220px;
+      flex: 1 1 220px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 0.5rem;
+      background: #ccc;
+    }
+    
+    /* To-Do List */
+    .todo-section { max-width: 400px; margin: 2rem auto; }
+    #todo-input { width: 70%; padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc; }
+    #add-todo { padding: 0.5rem 1rem; border: none; border-radius: 5px; background: #007bff; color: #fff; cursor: pointer; }
+    #add-todo:hover { background: #0056b3; }
+    #todo-list { list-style: none; padding: 0; margin-top: 1rem; }
+    #todo-list li {
+      background: #e9ecef;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .remove-todo {
+      background: #dc3545;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 0.2rem 0.7rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    
+    /* Contact Form */
+    .contact-form { 
+      max-width: 400px;
+      margin: 0 auto;
+      display: inline-block;
+      text-align: left;
+      width: 100%;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%; 
+      padding: 0.5rem; 
+      margin-bottom: 0.7rem; 
+      border: 1px solid #ccc; 
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background: #007bff; 
+      color: #fff; 
+      border: none; 
+      padding: 0.6rem 1.2rem; 
+      border-radius: 5px; 
+      cursor: pointer;
+      width: 100%;
+    }
+    .contact-form button:hover { background: #0056b3; }
+    
+    /* Responsive */
+    @media (max-width: 800px) {
+      .flex { flex-direction: column; }
+      .project-card, .product-card { width: 100%; }
+    }
+    @media (max-width: 500px) {
+      main { padding: 0.5rem; }
+      header { font-size: 1.2rem; }
+      nav { font-size: 0.95rem; }
+      nav a { margin: 0 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shobitha Pentakota</h1>
+    <p>Pursuing MCA at Aditya College of Engineering</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#todo">To-Do List</a>
+      <a href="#products">Product Listing</a>
+    </nav>
+  </header>
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm <strong>Shobitha Pentakota</strong>, currently pursuing my MCA at Aditya College of Engineering. I am passionate about web development and cloud technologies, and I love building projects that solve real-world problems.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="skill">Web Development</span>
+        <span class="skill">Linux</span>
+        <span class="skill">Git</span>
+        <span class="skill">Azure DevOps</span>
+        <span class="skill">Azure</span>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="flex">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Web Development Project">
+          <h3>Personal Portfolio Website</h3>
+          <p>A fully responsive personal portfolio website built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Azure DevOps Project">
+          <h3>CI/CD Pipeline with Azure DevOps</h3>
+          <p>Implemented automated build and deployment pipelines using Azure DevOps, integrating with Git and Azure services.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="To-Do App">
+          <h3>To-Do List App</h3>
+          <p>A simple yet powerful to-do list application with local storage for persistent task management.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Listing Section -->
+    <section id="products" class="section">
+      <h2>Product Listing</h2>
+      <div class="product-controls flex">
+        <div>
+          <label for="category">Filter by Category:</label>
+          <select id="category">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="books">Books</option>
+            <option value="fashion">Fashion</option>
+          </select>
+        </div>
+        <div>
+          <label for="sort">Sort by:</label>
+          <select id="sort">
+            <option value="default">Default</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating-desc">Rating: High to Low</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-list" id="product-list">
+        <!-- Products dynamically rendered -->
+      </div>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section id="todo" class="section todo-section">
+      <h2>To-Do List</h2>
+      <div>
+        <input type="text" id="todo-input" placeholder="Add a new task...">
+        <button id="add-todo">Add</button>
+      </div>
+      <ul id="todo-list"></ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="text-align: center;">
+      <h2>Contact</h2>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for contacting!'); this.reset();">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer style="text-align:center; padding:1rem 0; background:#2e3b4e; color:#fff;">
+    &copy; 2025 Shobitha Pentakota. All rights reserved.
+  </footer>
+  <script>
+    // Updated Product Data with T-Shirt Image
+    const products = [
+      {
+        name: "Wireless Headphones",
+        category: "electronics",
+        price: 1999,
+        rating: 4.5,
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0N-LE1lEgGVbdP5y4qp-p0QZEII-5MRyi3g&s"
+      },
+      {
+        name: "Smart Watch",
+        category: "electronics",
+        price: 2999,
+        rating: 4.8,
+        img: "https://www.leafstudios.in/cdn/shop/files/1_1099cd20-7237-4bdf-a180-b7126de5ef3d_800x.png?v=1722230645"
+      },
+      {
+        name: "Novel: The Alchemist",
+        category: "books",
+        price: 399,
+        rating: 4.7,
+        img: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        name: "Men's T-Shirt",
+        category: "fashion",
+        price: 499,
+        rating: 4.2,
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkJHLLhtmG5QLV_VDUkDQWbOvVDi_6QhpA3g&s"
+      },
+      
+      
+    ];
+
+    // Rest of the JavaScript remains same as previous version
+    function renderProducts() {
+      const category = document.getElementById('category').value;
+      const sort = document.getElementById('sort').value;
+      let filtered = products.slice();
+
+      if (category !== 'all') {
+        filtered = filtered.filter(p => p.category === category);
+      }
+
+      if (sort === 'price-asc') {
+        filtered.sort((a, b) => a.price - b.price);
+      } else if (sort === 'price-desc') {
+        filtered.sort((a, b) => b.price - a.price);
+      } else if (sort === 'rating-desc') {
+        filtered.sort((a, b) => b.rating - a.rating);
+      }
+
+      const list = document.getElementById('product-list');
+      list.innerHTML = '';
+      filtered.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <img src="${p.img}" alt="${p.name}">
+          <h4>${p.name}</h4>
+          <p>Category: ${p.category.charAt(0).toUpperCase() + p.category.slice(1)}</p>
+          <p>Price: ₹${p.price}</p>
+          <p>Rating: ⭐${p.rating}</p>
+        `;
+        list.appendChild(card);
+      });
+    }
+
+    document.getElementById('category').addEventListener('change', renderProducts);
+    document.getElementById('sort').addEventListener('change', renderProducts);
+    window.addEventListener('DOMContentLoaded', renderProducts);
+
+    // To-Do List with localStorage
+    let todos = JSON.parse(localStorage.getItem('todos') || '[]');
+
+    function renderTodos() {
+      const ul = document.getElementById('todo-list');
+      ul.innerHTML = '';
+      todos.forEach((todo, idx) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <span>${todo}</span>
+          <button class="remove-todo" onclick="removeTodo(${idx})">&times;</button>
+        `;
+        ul.appendChild(li);
+      });
+    }
+
+    function addTodo() {
+      const input = document.getElementById('todo-input');
+      const value = input.value.trim();
+      if (value) {
+        todos.push(value);
+        localStorage.setItem('todos', JSON.stringify(todos));
+        renderTodos();
+        input.value = '';
+      }
+    }
+
+    function removeTodo(idx) {
+      todos.splice(idx, 1);
+      localStorage.setItem('todos', JSON.stringify(todos));
+      renderTodos();
+    }
+
+    document.getElementById('add-todo').addEventListener('click', addTodo);
+    document.getElementById('todo-input').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') addTodo();
+    });
+
+    window.removeTodo = removeTodo;
+    window.addEventListener('DOMContentLoaded', renderTodos);
+  </script>
+</body>
+</html>
