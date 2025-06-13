@@ -1,0 +1,33 @@
+{
+  "name": "luxestore-ecommerce",
+  "version": "1.0.0",
+  "description": "Premium e-commerce website with advanced features and responsive design",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "ecommerce",
+    "shopping",
+    "responsive",
+    "javascript",
+    "css",
+    "html",
+    "performance",
+    "accessibility"
+  ],
+  "author": "LuxeStore Team",
+  "license": "MIT",
+  "dependencies": {
+    "vite": "^5.0.0"
+  },
+  "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
